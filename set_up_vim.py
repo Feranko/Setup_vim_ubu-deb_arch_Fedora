@@ -17,7 +17,7 @@ with open("/etc/os-release") as info:
             os.system("sudo dnf install vim python3 rustup clang golan-go nodejs22 java-latest-openjdk.x86_64")
             anti_ripetizione()
             break
-        if "Arch" in lines:
+        if "arch" in lines:
             print("You are on Arch")
             os.system("sudo pacman -S vim python3 python-virtualenv rustup nodejs clang go jre-openjdk")
             anti_ripetizione()
